@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test Runna Hoe</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+
+    <link rel="stylesheet" type="text/css" href="../jasmine/lib/jasmine-core/jasmine.css">
+</head>
+<body>
+    <div id="jasmine-content">
+        <div id="astar"></div>
+    </div>
+    <!-- libs -->
+    <script type="text/javascript" src="../jasmine/lib/jasmine-core/json2.js"></script>
+    <script type="text/javascript" src="../jasmine/lib/jasmine-core/jasmine.js"></script>
+    <script type="text/javascript" src="../jasmine/lib/jasmine-core/jasmine-html.js"></script>
+    <script type="text/javascript" src="specHelper.js"></script>
+    <script type="text/javascript" src="../vendor/underscore.js"></script>
+    <script type="text/javascript" src="../vendor/jquery-1.7.2.js"></script>
+
+    <!-- classes -->
+    <script type="text/javascript" src="../src/a_star.js"></script>
+
+    <!-- specs -->
+    <script type="text/javascript" src="a_star/a_star_spec.js"></script>
+
+    <script>
+        $(function() {
+            var jasmineEnv = jasmine.getEnv();
+            jasmineEnv.updateInterval = 1000;
+
+            var trivialReporter = new jasmine.TrivialReporter();
+
+            jasmineEnv.addReporter(trivialReporter);
+
+            jasmineEnv.specFilter = function(spec) {return trivialReporter.specFilter(spec);};
+
+            var currentWindowOnload = window.onload;
+
+            window.onload = function() {
+                if (currentWindowOnload)
+                    currentWindowOnload();
+                execJasmine();
+            };
+
+            function execJasmine() {
+                jasmineEnv.execute();
+            }
+        })();
+    </script>
+</body>
+</html>
