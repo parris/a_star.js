@@ -21,13 +21,17 @@
     <script type="text/javascript" src="../vendor/jquery-1.7.2.js"></script>
 
     <!-- classes -->
+    <script type="text/javascript" src="../src/map.js"></script>
     <script type="text/javascript" src="../src/a_star.js"></script>
 
     <!-- specs -->
-    <script type="text/javascript" src="a_star/a_star_spec.js"></script>
+    <script type="text/javascript" src="pathfinder/map_spec.js"></script>
+    <script type="text/javascript" src="pathfinder/a_star_spec.js"></script>
 
     <script>
-        $(function() {
+        /*global describe, expect, it, beforeEach, $, _ */
+        $(function () {
+            'use strict';
             var jasmineEnv = jasmine.getEnv();
             jasmineEnv.updateInterval = 1000;
 
