@@ -1,10 +1,10 @@
+/*global $, _ */
 var pathfinder = pathfinder || {};
 
 (function () {
     'use strict';
-    var map;
 
-    function aStar(args) {
+    function aStar() {
     }
 
     //expose

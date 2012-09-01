@@ -1,7 +1,8 @@
 /*global describe, expect, it, beforeEach, $, _, pathfinder */
-describe("Map", function () {
+describe("Generated Map", function () {
     'use strict';
     var map;
+
     beforeEach(function () {
         map = pathfinder.Map({width: 10, height: 10});
     });
@@ -23,5 +24,24 @@ describe("Map", function () {
     it("can draw the map", function () {
         map.draw("#astar");
         expect($("#astar table").length).toBeGreaterThan(0);
+    });
+});
+
+describe("Set Map", function () {
+    'use strict';
+    var map,
+        //fixtures
+        testMap1 = [[0, 1, 2, 3, 4, 5, "E"], [0, 1, "S", 3, 4, 5, 6]],
+        start1 = {x: 2, y: 1},
+        end1 = {x: 6, y: 0};
+
+    beforeEach(function () {
+        map = pathfinder.Map({map: testMap1});
+    });
+
+    it("should set up the map properly", function () {
+        expect(map.get()).toEqual(testMap1);
+        expect(map.start).toEqual(start1);
+        expect(map.end).toEqual(end1);
     });
 });

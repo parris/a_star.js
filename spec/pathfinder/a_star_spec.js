@@ -4,6 +4,10 @@ describe("AStar", function () {
     var map;
 
     beforeEach(function () {
-        map = pathfinder.map(10, 10);
+        map = pathfinder.Map({width: 10, height: 10});
+    });
+
+    it("Finds a path from S to E", function () {
+        expect(true).toEqual(true);
     });
 });

@@ -4,6 +4,30 @@ var pathfinder = pathfinder || {};
     'use strict';
 
     /**
+     * Finds and returns the end points on the map
+     * @param map_param A 2D array of numbers with a "S" and "E" denoting start and end positions
+     * @return {start: {x,y}, end:{x,y}};
+     */
+    function mapFindEndPoints(map_param) {
+        var width = map_param[0].length,
+            mapFlat = _.flatten(map_param),
+            startPosition = mapFlat.indexOf("S"),
+            endPosition = mapFlat.indexOf("E"),
+            start = {
+                x: Math.floor(startPosition % width),
+                y: Math.floor(startPosition / width)
+            },
+            end = {
+                x: Math.floor(endPosition % width),
+                y: Math.floor(endPosition / width)
+            };
+        return {start: start, end: end};
+    }
+
+    //expose
+    pathfinder.findEndPoints = mapFindEndPoints;
+
+    /**
      * Creates a Map object
      * @param args.map (optional) If set it will take the array of arrays (2D) specified and use it as our map
      * @param args.width (optional) Requires height to also be set, the width of the 2D array to generate
@@ -11,7 +35,10 @@ var pathfinder = pathfinder || {};
      * @throw InvalidInputException
      */
     function Map(args) {
-        var map = [];
+        var map = [],
+            start = {x: 0, y: 0},
+            end = {x: 0, y: 0};
+
         /**
          * Gets the Map array
          * @return {Array}
@@ -26,8 +53,11 @@ var pathfinder = pathfinder || {};
          * @return {Array}
          */
         function mapSet(map_param) {
+            var position = pathfinder.findEndPoints(map_param);
             map = map_param;
-            return map;
+            start = position.start;
+            end = position.end;
+            return { map: map, start: start, end: end };
         }
 
         /**
@@ -55,7 +85,10 @@ var pathfinder = pathfinder || {};
 
             map[sX][sY] = "S";
             map[eX][eY] = "E";
-            return map;
+            start = { x: sX, y: sY };
+            end = { x: eX, y: eY };
+
+            return { map: map, start: start, end: end };
         }
 
         /**
@@ -103,6 +136,8 @@ var pathfinder = pathfinder || {};
         //expose
         return {
             map : map,
+            start: start,
+            end: end,
             set : mapSet,
             get : mapGet,
             draw : mapDraw
