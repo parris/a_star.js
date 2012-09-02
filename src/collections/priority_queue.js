@@ -5,9 +5,10 @@ var collections = collections || {};
     /**
      * Creates a new priority queue object. If your data is just basic types: Numbers, Strings the
      * default javascript comparisons will be made. If your data is an object then those objects must
-     * have a compareTo method. If no compareTo method exist then and MissingComparatorException will
-     * be thrown. This priority queue is based on min-heap using an array. Lower values will always be given first.
-     * Everything in your priority queue must be of the same type otherwise it is not possible to compare.
+     * have a compareTo method. If no compareTo method exist then and InvalidDataException will
+     * be thrown. This priority queue is based on min-heap using an array. Lower values will always be
+     * given first unless a comparator is defined. Everything in your priority queue must be of the same
+     * javascript type otherwise an InvalidDataException will be thrown.
      *
      * @param data (optional) Will accept and array as the initial seed for the priority queue
      * @constructor
@@ -29,16 +30,16 @@ var collections = collections || {};
          * @param item to type check.
          * @return type
          */
-        function pq_find_generic(item) {
+        function pq_findGeneric(item) {
             var result,
-                item_type = typeof item;
-            //i don't really want to consider and array as an object
-            if (item_type === "object"
+                itemType = typeof item;
+            //i don't really want to consider an array as an object
+            if (itemType === "object"
                     && item !== null
                     && typeof item.length !== "undefined") {
                 result = "array";
             } else {
-                result = item_type;
+                result = itemType;
             }
             return result;
         }
@@ -106,8 +107,8 @@ var collections = collections || {};
          * @return {PriorityQueue} This.
          */
         function pq_offer(item) {
-            var next_index,
-                item_type = pq_find_generic(item);
+            var nextIndex,
+                itemType = pq_findGeneric(item);
             function bubble(i) {
                 var parent_index;
                 if (i === 0) {
@@ -127,23 +128,23 @@ var collections = collections || {};
 
             //inserted item can't be:
             //undefined, null, a function or an object (not array) and doesn't have a compareToMethod
-            if (item_type === "undefined"
+            if (itemType === "undefined"
                     || item === null
-                    || item_type === "function"
-                    || (item_type === "object"
+                    || itemType === "function"
+                    || (itemType === "object"
                         && typeof item.compareTo === "undefined")) {
                 throw "InvalidDataException";
             }
             if (heap.length === 0) {
-                generic = pq_find_generic(item);
+                generic = pq_findGeneric(item);
                 heap.push(item);
             } else {
-                if (generic !== pq_find_generic(item)) {
+                if (generic !== pq_findGeneric(item)) {
                     throw "InvalidDataException";
                 }
-                next_index = heap.length;
-                heap[next_index] = item;
-                bubble(next_index);
+                nextIndex = heap.length;
+                heap[nextIndex] = item;
+                bubble(nextIndex);
             }
 
             return that;
