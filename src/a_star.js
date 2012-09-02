@@ -1,4 +1,4 @@
-/*global $, _ */
+/*global collections, $, _ */
 var pathfinder = pathfinder || {};
 
 (function () {
@@ -7,13 +7,13 @@ var pathfinder = pathfinder || {};
     function aStar(map) {
         //nodes
         var evaluated = [],
-            tentative = [map.start], //change to priorityqueue
+            tentative = new collections.PriorityQueue([map.start]),
             navigated = [],
             score = 0,
             current = null;
 
         while (tentative.length > 0) {
-            current = tentative.pop(); //pull off priorityqueue
+            current = tentative.poll();
         }
 
 

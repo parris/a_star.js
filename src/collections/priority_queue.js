@@ -82,12 +82,12 @@ var collections = collections || {};
                     smallest = i;
                 if (left < heap.length &&
                         ((generic !== "object" && heap[left] < heap[smallest])
-                            || (generic === "object" && heap[left].compareTo(heap[smallest])))) {
+                            || (generic === "object" && heap[left].compareTo(heap[smallest]) === -1))) {
                     smallest = left;
                 }
                 if (right < heap.length &&
                         ((generic !== "object" && heap[right] < heap[smallest])
-                            || (generic === "object" && heap[right].compareTo(heap[smallest])))) {
+                            || (generic === "object" && heap[right].compareTo(heap[smallest]) === -1))) {
                     smallest = right;
                 }
                 if (smallest !== i) {
@@ -109,12 +109,16 @@ var collections = collections || {};
             var next_index,
                 item_type = pq_find_generic(item);
             function bubble(i) {
-                var parent_index = Math.floor((i + 1) / 2) - 1;
+                var parent_index;
+                if (i === 0) {
+                    return true;
+                }
+                parent_index = Math.floor((i + 1) / 2) - 1;
                 //if object, do a compareTo, otherwise try primitive comparison
                 //only if the value of i is greater than j swap
                 //don't swap if equal or less, which includes comparing itself (done)
-                if ((typeof i === "object" && heap[parent_index].compareTo(heap[i]) > 0)
-                        || heap[parent_index] > heap[i]) {
+                if ((generic === "object" && heap[parent_index].compareTo(heap[i]) > 0)
+                        || (generic !== "object" && heap[parent_index] > heap[i])) {
                     pq_swap(i, parent_index);
                     //after swap you should bubble up and check the next level
                     bubble(parent_index);

@@ -2,6 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cc03fb2f-502d-49b0-aba9-586a8f8e9f7c" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spec/collections/node_spec.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/collections/node.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/collections/priority_queue_spec.js" afterPath="$PROJECT_DIR$/spec/collections/priority_queue_spec.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/a_star.js" afterPath="$PROJECT_DIR$/src/a_star.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/collections/priority_queue.js" afterPath="$PROJECT_DIR$/src/collections/priority_queue.js" />
     </list>
     <ignored path="sexy_time_a_star.iws" />
@@ -27,7 +32,7 @@
       <file leaf-file-name="a_star_spec.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/spec/pathfinder/a_star_spec.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="7" selection-start="360" selection-end="360" vertical-scroll-proportion="0.0">
+            <state line="0" column="0" selection-start="0" selection-end="67" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -35,10 +40,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="a_star.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="a_star.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/a_star.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="16" vertical-scroll-proportion="0.0">
+            <state line="15" column="39" selection-start="396" selection-end="396" vertical-scroll-proportion="0.31290743">
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -49,7 +54,7 @@
       <file leaf-file-name="priority_queue_spec.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/spec/collections/priority_queue_spec.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="4" selection-start="451" selection-end="451" vertical-scroll-proportion="0.0">
+            <state line="11" column="10" selection-start="382" selection-end="382" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -57,10 +62,28 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="priority_queue.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="priority_queue.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/collections/priority_queue.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="149" column="36" selection-start="5685" selection-end="5685" vertical-scroll-proportion="0.37418514">
+            <state line="89" column="99" selection-start="3343" selection-end="3343" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="node_spec.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spec/collections/node_spec.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="64" selection-start="64" selection-end="64" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="node.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/collections/node.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -102,7 +125,7 @@
       <file leaf-file-name="suite.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/spec/suite.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="69" selection-start="1301" selection-end="1301" vertical-scroll-proportion="-13.68">
+            <state line="28" column="69" selection-start="1301" selection-end="1301" vertical-scroll-proportion="-17.92">
               <folding />
             </state>
           </provider>
@@ -127,20 +150,21 @@
         <option value="$PROJECT_DIR$/spec/pathfinder/helpers_spec.js" />
         <option value="$PROJECT_DIR$/src/helpers.js" />
         <option value="$PROJECT_DIR$/src/map.js" />
-        <option value="$PROJECT_DIR$/src/a_star.js" />
         <option value="$PROJECT_DIR$/spec/pathfinder/map_spec.js" />
         <option value="$PROJECT_DIR$/spec/collections/priorityqueue_spec.js" />
         <option value="$PROJECT_DIR$/spec/suite.html" />
         <option value="$PROJECT_DIR$/spec/pathfinder/a_star_spec.js" />
+        <option value="$PROJECT_DIR$/spec/collections/node_spec.js" />
         <option value="$PROJECT_DIR$/spec/collections/priority_queue_spec.js" />
         <option value="$PROJECT_DIR$/src/collections/priority_queue.js" />
+        <option value="$PROJECT_DIR$/src/a_star.js" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="1" />
     <option name="y" value="22" />
-    <option name="width" value="1353" />
+    <option name="width" value="1135" />
     <option name="height" value="937" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -321,14 +345,14 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1" y="22" width="1353" height="937" extended-state="0" />
+    <frame x="1" y="22" width="1135" height="937" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2578424" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.30945823" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -405,18 +429,25 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/map.js">
+    <entry file="file://$PROJECT_DIR$/spec/suite.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="50" selection-start="645" selection-end="645" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
+        <state line="28" column="69" selection-start="1301" selection-end="1301" vertical-scroll-proportion="-17.92">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/spec/pathfinder/map_spec.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="75" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/map.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="50" selection-start="645" selection-end="645" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
@@ -432,34 +463,32 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spec/suite.html">
+    <entry file="file://$PROJECT_DIR$/spec/pathfinder/a_star_spec.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="69" selection-start="1301" selection-end="1301" vertical-scroll-proportion="-13.68">
+        <state line="0" column="0" selection-start="0" selection-end="67" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/collections/node_spec.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="64" selection-start="64" selection-end="64" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spec/pathfinder/a_star_spec.js">
+    <entry file="file://$PROJECT_DIR$/src/collections/node.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="7" selection-start="360" selection-end="360" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/a_star.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="16" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/spec/collections/priority_queue_spec.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="4" selection-start="451" selection-end="451" vertical-scroll-proportion="0.0">
+        <state line="11" column="10" selection-start="382" selection-end="382" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
@@ -468,8 +497,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/collections/priority_queue.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="149" column="36" selection-start="5685" selection-end="5685" vertical-scroll-proportion="0.37418514">
+        <state line="89" column="99" selection-start="3343" selection-end="3343" vertical-scroll-proportion="0.0">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/a_star.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="39" selection-start="396" selection-end="396" vertical-scroll-proportion="0.31290743">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

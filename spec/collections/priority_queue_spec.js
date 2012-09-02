@@ -17,9 +17,9 @@ describe("Priority Queue", function () {
         EpicClass = function (value) {
             this.value = value;
             this.compareTo = function (j) {
-                if (this.value < j.value) {
+                if (this.value > j.value) {
                     return 1;
-                } else if (this.value > j.value){
+                } else if (this.value < j.value){
                     return -1;
                 }
                 return 0;
@@ -95,7 +95,7 @@ describe("Priority Queue", function () {
         expect(pq.poll()).toEqual(9999);
     });
 
-    xit("Polls objects with compareTo methods", function () {
+    it("Polls objects with compareTo methods", function () {
         pq.offer(new EpicClass(10))
             .offer(new EpicClass(5))
             .offer(new EpicClass(3))
