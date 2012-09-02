@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cc03fb2f-502d-49b0-aba9-586a8f8e9f7c" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spec/collections/priority_queue_spec.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/collections/priority_queue.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dictionaries/parris.xml" afterPath="$PROJECT_DIR$/.idea/dictionaries/parris.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/pathfinder/a_star_spec.js" afterPath="$PROJECT_DIR$/spec/pathfinder/a_star_spec.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/pathfinder/map_spec.js" afterPath="$PROJECT_DIR$/spec/pathfinder/map_spec.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/suite.html" afterPath="$PROJECT_DIR$/spec/suite.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/a_star.js" afterPath="$PROJECT_DIR$/src/a_star.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/collections/priority_queue.js" afterPath="$PROJECT_DIR$/src/collections/priority_queue.js" />
     </list>
     <ignored path="sexy_time_a_star.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -53,10 +46,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="priority_queue_spec.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="priority_queue_spec.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/spec/collections/priority_queue_spec.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="124" column="46" selection-start="4560" selection-end="4560" vertical-scroll-proportion="2.5867014">
+            <state line="14" column="4" selection-start="451" selection-end="451" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -64,10 +57,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="priority_queue.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="priority_queue.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/collections/priority_queue.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="78" column="33" selection-start="2696" selection-end="2696" vertical-scroll-proportion="0.0">
+            <state line="149" column="36" selection-start="5685" selection-end="5685" vertical-scroll-proportion="0.37418514">
               <folding />
             </state>
           </provider>
@@ -139,8 +132,8 @@
         <option value="$PROJECT_DIR$/spec/collections/priorityqueue_spec.js" />
         <option value="$PROJECT_DIR$/spec/suite.html" />
         <option value="$PROJECT_DIR$/spec/pathfinder/a_star_spec.js" />
-        <option value="$PROJECT_DIR$/src/collections/priority_queue.js" />
         <option value="$PROJECT_DIR$/spec/collections/priority_queue_spec.js" />
+        <option value="$PROJECT_DIR$/src/collections/priority_queue.js" />
       </list>
     </option>
   </component>
@@ -464,19 +457,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/collections/priority_queue.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="78" column="33" selection-start="2696" selection-end="2696" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/spec/collections/priority_queue_spec.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="124" column="46" selection-start="4560" selection-end="4560" vertical-scroll-proportion="2.5867014">
+        <state line="14" column="4" selection-start="451" selection-end="451" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/collections/priority_queue.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="149" column="36" selection-start="5685" selection-end="5685" vertical-scroll-proportion="0.37418514">
+          <folding />
         </state>
       </provider>
     </entry>

@@ -1,5 +1,4 @@
 var collections = collections || {};
-/*global _ */
 (function () {
     'use strict';
 
@@ -64,6 +63,10 @@ var collections = collections || {};
             return heap.length;
         }
 
+        /**
+         * Returns and removes the minimum value off the priority queue, and finds the next minimum
+         * @return {*} min value
+         */
         function pq_poll() {
             var result;
             if (heap.length === 0){
@@ -97,10 +100,10 @@ var collections = collections || {};
         }
 
         /**
-         *
-         * @throw InvalidDataException
-         * @param item
-         * @return {*}
+         * Adds an item to the PriorityQueue
+         * @throw InvalidDataException when data type doesn't match or undefined, null or function
+         * @param Item of consistent type to add. If object it must contain a compareTo method returning 1, 0, -1
+         * @return {PriorityQueue} This.
          */
         function pq_offer(item) {
             var next_index,
@@ -142,6 +145,10 @@ var collections = collections || {};
             return that;
         }
 
+        /**
+         * Returns the minimum value without removing it
+         * @return {*} minimum value
+         */
         function pq_peek() {
             return heap[0];
         }
