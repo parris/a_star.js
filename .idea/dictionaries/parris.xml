@@ -2,6 +2,7 @@
   <dictionary name="parris">
     <words>
       <w>astar</w>
+      <w>heapify</w>
       <w>onload</w>
     </words>
   </dictionary>

@@ -1,4 +1,4 @@
-/*global describe, expect, it, beforeEach, $, _, pathfinder */
+/*global describe, expect, it, beforeEach, $, _, pathfinder, collections */
 describe("Generated Map", function () {
     'use strict';
     var map;
