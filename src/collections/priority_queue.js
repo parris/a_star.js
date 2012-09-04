@@ -3,16 +3,15 @@ var collections = collections || {};
     'use strict';
 
     /**
-     * Creates a new priority queue object. If your data is just basic types: Numbers, Strings the
+     * Creates a new priority queue object. If your data consists of basic types: Numbers, Strings; then
      * default javascript comparisons will be made. If your data is an object then those objects must
-     * have a compareTo method. If no compareTo method exist then and InvalidDataException will
-     * be thrown. This priority queue is based on min-heap using an array. Lower values will always be
-     * given first unless a comparator is defined. Everything in your priority queue must be of the same
-     * javascript type otherwise an InvalidDataException will be thrown.
+     * have a compareTo method. This priority queue is based on min-heap using an array. Lower values
+     * will always be given first unless a comparator is defined.
      *
-     * @param data (optional) Will accept and array as the initial seed for the priority queue
+     * @param data (optional) Will accept an array as the initial seed for the priority queue
      * @constructor
-     * @throw MissingComparatorException
+     * @throw InvalidDataException If no compareTo method exist or if data is not of the same type
+     * @return {PriorityQueue} this
      */
     function PriorityQueue(data) {
         var that = this,

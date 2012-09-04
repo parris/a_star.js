@@ -3,10 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="cc03fb2f-502d-49b0-aba9-586a8f8e9f7c" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/collections/priority_queue_spec.js" afterPath="$PROJECT_DIR$/spec/collections/priority_queue_spec.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/pathfinder/a_star_spec.js" afterPath="$PROJECT_DIR$/spec/pathfinder/a_star_spec.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/a_star.js" afterPath="$PROJECT_DIR$/src/a_star.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/collections/node.js" afterPath="$PROJECT_DIR$/src/collections/node.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/collections/priority_queue.js" afterPath="$PROJECT_DIR$/src/collections/priority_queue.js" />
     </list>
     <ignored path="sexy_time_a_star.iws" />
@@ -29,10 +25,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="a_star_spec.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="a_star_spec.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/spec/pathfinder/a_star_spec.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="3" selection-start="537" selection-end="537" vertical-scroll-proportion="0.34042552">
+            <state line="16" column="3" selection-start="537" selection-end="537" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -42,9 +38,16 @@
         <entry file="file://$PROJECT_DIR$/src/a_star.js">
           <provider selected="true" editor-type-id="text-editor">
             <state line="31" column="40" selection-start="1292" selection-end="1292" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="priority_queue.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/collections/priority_queue.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="13" column="35" selection-start="709" selection-end="709" vertical-scroll-proportion="0.27659574">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -91,16 +94,16 @@
         <option value="$PROJECT_DIR$/spec/suite.html" />
         <option value="$PROJECT_DIR$/spec/collections/node_spec.js" />
         <option value="$PROJECT_DIR$/src/collections/node.js" />
-        <option value="$PROJECT_DIR$/src/collections/priority_queue.js" />
         <option value="$PROJECT_DIR$/spec/collections/priority_queue_spec.js" />
         <option value="$PROJECT_DIR$/src/a_star.js" />
         <option value="$PROJECT_DIR$/spec/pathfinder/a_star_spec.js" />
+        <option value="$PROJECT_DIR$/src/collections/priority_queue.js" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="y" value="59" />
-    <option name="width" value="1038" />
+    <option name="x" value="1680" />
+    <option name="width" value="1600" />
     <option name="height" value="900" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -203,42 +206,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sexy_time_a_star" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="a_star.js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="spec" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pathfinder" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sexy_time_a_star" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="a_star.js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="spec" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="collections" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -247,8 +214,8 @@
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="options.lastSelected" value="preferences.customizations" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="RunManager">
     <configuration default="true" type="JavascriptDebugSession" factoryName="Local">
@@ -288,14 +255,14 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="59" width="1038" height="900" extended-state="0" />
+    <frame x="1680" y="0" width="1600" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30952382" sideWeight="0.998776" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.30952382" sideWeight="0.998776" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -392,21 +359,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/spec/collections/priority_queue_spec.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="135" column="40" selection-start="4892" selection-end="4892" vertical-scroll-proportion="0.21276596">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/collections/priority_queue.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="176" column="0" selection-start="6665" selection-end="6665" vertical-scroll-proportion="0.7194149">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/map.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="0" selection-start="17" selection-end="84" vertical-scroll-proportion="0.0" />
+        <state line="135" column="40" selection-start="4892" selection-end="4892" vertical-scroll-proportion="0.21276596" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/spec/collections/node_spec.js">
@@ -414,18 +367,26 @@
         <state line="7" column="25" selection-start="240" selection-end="240" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/a_star.js">
+    <entry file="file://$PROJECT_DIR$/src/map.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="40" selection-start="1292" selection-end="1292" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
+        <state line="1" column="0" selection-start="17" selection-end="84" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/spec/pathfinder/a_star_spec.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="3" selection-start="537" selection-end="537" vertical-scroll-proportion="0.34042552">
+        <state line="16" column="3" selection-start="537" selection-end="537" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/a_star.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="40" selection-start="1292" selection-end="1292" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/collections/priority_queue.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="35" selection-start="709" selection-end="709" vertical-scroll-proportion="0.27659574">
           <folding />
         </state>
       </provider>
