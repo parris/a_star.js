@@ -5,7 +5,9 @@ var collections = collections || {};
 
     /**
      * Base class to be extended. Includes a comparator.
-     * @param value
+     * @param value is the comparable value.
+     * @param args {*} Any other data you would like to include with this node.
+     *      Do not send an object with member named value.
      * @constructor
      */
     function Node(value, args) {

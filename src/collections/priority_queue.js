@@ -158,6 +158,44 @@ var collections = collections || {};
             return heap[0];
         }
 
+        /**
+         * Sift will fix the priority queue after a value is modified. A value only needs to be sifted if it is smaller
+         * than it previously was (or larger if your object's comparisons are reversed).
+         * @param val the value or object to be sifted. If multiple values are found they will that match. They will
+         * all be sifted
+         * @return {PriorityQueue} this
+         */
+        function pq_sift(val) {
+            var i = 0,
+                keys = [],
+                j = 0;
+
+            function decreaseKey(i) {
+                var current = i,
+                    parentIndexOfY = Math.floor((i + 1) / 2) - 1,
+                    parentOfY = heap[parentIndexOfY];
+
+                while (typeof parentOfY !== "undefined"
+                        && ((generic === "object" && parentOfY.compareTo(heap[current]) === 1)
+                            || (generic !== "object" && parentOfY > heap[current]))) {
+                    pq_swap(current, parentIndexOfY);
+                    current = parentIndexOfY;
+                    parentIndexOfY = Math.floor((current + 1) / 2) - 1;
+                    parentOfY = heap[parentIndexOfY];
+                }
+            }
+
+            for (i; i < heap.length; i++) {
+                if (heap[i] === val) {
+                    keys.push(i);
+                }
+            }
+
+            for (j; j < keys.length; j++) {
+                decreaseKey(keys[j]);
+            }
+        }
+
         //construct
         if (typeof data !== "undefined") {
             for (i; i < data.length; i++) {
@@ -170,6 +208,7 @@ var collections = collections || {};
         this.offer = pq_offer;
         this.peek = pq_peek;
         this.poll = pq_poll;
+        this.sift = pq_sift;
 
         return that;
     }

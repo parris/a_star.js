@@ -124,6 +124,42 @@ describe("Priority Queue", function () {
         expect(pq.poll().value).toEqual(100);
         expect(pq.poll().value).toEqual(9999);
     });
+
+    it("Can decrease the value of some item and retain order", function () {
+        var a = new EpicClass(50),
+            b = new EpicClass(11);
+        pq.offer(new EpicClass(15))
+            .offer(new EpicClass(10))
+            .offer(new EpicClass(12))
+            .offer(a);
+
+        expect(pq.peek().value).toEqual(10);
+        a.value = 1;
+
+        pq.sift(a);
+        expect(pq.peek().value).toEqual(1);
+        pq.poll();
+
+        pq.offer(new EpicClass(90))
+            .offer(new EpicClass(5))
+            .offer(new EpicClass(3))
+            .offer(new EpicClass(1000))
+            .offer(new EpicClass(70))
+            .offer(b);
+
+        expect(pq.peek().value).toEqual(3);
+        b.value = 2;
+        pq.sift(b);
+        expect(pq.poll().value).toEqual(2);
+        expect(pq.poll().value).toEqual(3);
+        expect(pq.poll().value).toEqual(5);
+        expect(pq.poll().value).toEqual(10);
+        expect(pq.poll().value).toEqual(12);
+        expect(pq.poll().value).toEqual(15);
+        expect(pq.poll().value).toEqual(70);
+        expect(pq.poll().value).toEqual(90);
+        expect(pq.poll().value).toEqual(1000);
+    });
 });
 
 describe("Priority Queue with array", function () {
