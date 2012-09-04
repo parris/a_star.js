@@ -4,7 +4,7 @@
 //     Portions of Underscore are inspired or borrowed from Prototype,
 //     Oliver Steele's Functional, and John Resig's Micro-Templating.
 //     For all details and documentation:
-//     http://documentcloud.github.com/underscore
+//     http://documentcloud.github.com/underscore 
 
 (function() {
 
